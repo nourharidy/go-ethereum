@@ -1,6 +1,8 @@
 ## Go Ethereum
 
-Official golang implementation of the Ethereum protocol.
+Unofficial golang implementation of the Ethereum protocol.
+
+The purpose of this fork is to create a single contract Ethereum blockchain. It could be useful to create new blockchains based on the Ethereum code base while preventing users from creating their own smart contracts. This is still not usable yet.
 
 [![API Reference](
 https://camo.githubusercontent.com/915b7be44ada53c290eb157634330494ebe3e30a/68747470733a2f2f676f646f632e6f72672f6769746875622e636f6d2f676f6c616e672f6764646f3f7374617475732e737667
