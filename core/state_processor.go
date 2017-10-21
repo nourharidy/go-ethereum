@@ -119,7 +119,9 @@ func ApplyTransaction(config *params.ChainConfig, bc *BlockChain, author *common
 	receipt.GasUsed = new(big.Int).Set(gas)
 	// if the transaction created a contract, store the creation address in the receipt.
 	if msg.To() == nil {
-		receipt.ContractAddress = crypto.CreateAddress(vmenv.Context.Origin, tx.Nonce())
+		// UNTESTED
+		// If transaction is a contract creation, return an error and invalidate the block
+		return nil, nil, err
 	}
 
 	// Set the receipt logs and create a bloom for filtering
